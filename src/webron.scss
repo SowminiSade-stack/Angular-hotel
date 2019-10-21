@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+$webron-primary: mat-palette($mat-blue,300);
+$webron-accent:  mat-palette($mat-blue, 200);
+
+
+$webron-warn:    mat-palette($mat-red);
+
+
+$webron: mat-light-theme($webron-primary, $webron-accent, $webron-warn);
+
+
+@include angular-material-theme($webron);
+
+
+.navtabs-container {
+  background-color:mat-color($webron-accent);
+}
