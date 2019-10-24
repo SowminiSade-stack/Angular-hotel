@@ -1,0 +1,13 @@
+@import '~@angular/material/theming';
+
+@mixin navtabs-component-theme($webron)
+{
+  $primary:map-get($webron,primary);
+  $accent:map-get($webron,accent);
+
+
+// Put all your thememing styles here
+  .navtabs-container {
+    background-color:mat-color($webron-accent,200);
+  }
+}

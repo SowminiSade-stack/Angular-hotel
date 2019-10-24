@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+
+@mixin sidenav-list-component-theme($webron)
+{
+  $primary:map-get($webron,primary);
+  $accent:map-get($webron,accent);
+
+// put all your side navigation theme colors here
+.mat-list-option:hover,
+.mat-list-option.mat-list-item-focus,
+.mat-nav-list .mat-list-item:hover,
+.mat-nav-list.mat-list .mat-list-item .mat-list-item-focus{
+  background-color: mat-color($webron-accent,200);
+  color:mat-color($webron-primary,900);
+
+  }
+}
