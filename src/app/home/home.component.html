@@ -1,20 +1,27 @@
-<div class="container">
+<div class="hero-container">
   <div class="book-now-container">
     <div fxFlex fxLayoutAlign="flex-end">
-      <button mat-stroked-button color="primary" class="book-now-button">
+      <button mat-stroked-button color="primary" class="book-now-button" (click)="booknow()">
         Book Now
       </button>
     </div>
   </div>
 
   <div class="header-container" fxLayout="column" fxLayout="row"   fxLayoutAlign="center center">
-    <div >
-      <h3 class="mat-subheading-2">
+
+      <h2 class="mat-display-1">
         Luxury Beach front Resort
-      </h3>
-      <h1 class="mat-headline">
+      </h2>
+      <h1 class="mat-display-3">
           SM Beach Resorts &amp; Spa
         </h1>
-    </div>
-  </div>
+</div>
+
+<div class="thailand" fxLayout="column" fxLayout="row"   fxLayoutAlign="center center">
+  <h2 class="mat-display-4"> Thailand</h2>
+</div>
+
+<!-- <div class="thailand">
+<h2> Thailand</h2>
+</div> -->
 </div>

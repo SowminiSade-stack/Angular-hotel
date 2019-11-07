@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-rooms',
   templateUrl: './rooms.component.html',
@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoomsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router) { }
+  @Input() accomdation: string ;
   ngOnInit() {
   }
 

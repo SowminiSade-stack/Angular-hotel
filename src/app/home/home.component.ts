@@ -11,5 +11,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
+booknow() {
+  console.log('im booked');
+}
 }

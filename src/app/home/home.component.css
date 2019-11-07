@@ -1,7 +1,9 @@
-.container {
-  height: 100vh;
+.hero-container {
+ /* height: 100vh;*/
 
-  background: url(/assets/images/home_beach.jpg) no-repeat;
+  background: url(/assets/images/home_beach.jpg) center center no-repeat;
+  background-size:cover;
+  height: cal(100vh -145);
 }
 
 
@@ -18,5 +20,53 @@
 }
 .header-container
 {
-height: 100vh;
+/* height: 100vh; */
+padding: 100px 50px;
+
+text-align: center;
+max-width: 600px;
+}
+.header-container .mat-display-3 {
+  color:white;
+
+}
+.header-container .mat-display-1 {
+  margin: 10px;
+
+}
+@media all and(max-width:768px){
+  .hero-container{
+    height: 90vh;
+  }
+
+}
+.thailand{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+
+}
+.thailand h2{
+-webkit-text-fill-color: transparent;
+background: url(/assets/images/thailand_text_background.jpg) repeat;
+-webkit-background-clip: text;
+font-stretch:normal;
+font-size: 200px;
+letter-spacing: 0.09em;
+font-weight: 500;
+
+}
+@media all and(max-width:599px){
+  .header-container.mat-display-1{
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
+
+  .header-container.mat-display-3{
+    font-size: 3rem;
+    line-height: 1.1;
+
+  }
+
 }
