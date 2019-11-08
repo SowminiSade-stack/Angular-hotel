@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-food-and-beverage',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./food-and-beverage.component.css']
 })
 export class FoodAndBeverageComponent implements OnInit {
-
+  @Output() SideNavigationToggle = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
   }
-
+  onToggleOpenSidenav() {
+    this.SideNavigationToggle.emit();
+ }
 }

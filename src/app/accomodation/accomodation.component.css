@@ -1,3 +1,12 @@
 .tp-card {
   max-width: 400px;
 }
+.md-title{
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  margin-top: -81px;
+  margin-left: -24px;
+  font-size: 20px;
+  padding: 10px;
+}

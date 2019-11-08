@@ -28,6 +28,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
+import { SideComponent } from './food-and-beverage/side/side.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +54,7 @@ import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
     HeaderComponent,
     SidenavListComponent,
     NavtabsComponent,
+    SideComponent,
 ],
   imports: [
     BrowserModule,

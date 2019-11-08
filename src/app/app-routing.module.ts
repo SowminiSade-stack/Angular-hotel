@@ -10,6 +10,8 @@ import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { RoomsComponent } from './accomodation/rooms/rooms.component';
+import { BarsComponent } from './food-and-beverage/bars/bars.component';
+import { ResturantComponent } from './food-and-beverage/resturant/resturant.component';
 
 const routes: Routes = [
   { path: 'accomodation', component: AccomodationComponent,
@@ -25,6 +27,8 @@ const routes: Routes = [
   { path: 'offers', component: OffersComponent},
   { path: 'signin', component: SigninComponent},
   { path: 'signup', component: SignupComponent},
+  {path: 'bars' , component: BarsComponent},
+  {path: 'restro', component: ResturantComponent},
   { path: '' , component: HomeComponent}
   ];
 

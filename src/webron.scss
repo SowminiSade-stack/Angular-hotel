@@ -86,13 +86,16 @@ $webron: mat-light-theme($webron-primary, $webron-accent, $webron-warn);
 
 //Sidenav-list scss file
 @import './app/navigation/sidenav-list/sidenav-list.component-theme.scss';
+
+//side scss file
+// @import '.app/food-and-beverage/side/side.component-theme.scss';
 @include angular-material-theme($webron);
 
 @include navtabs-component-theme($webron);
 
 @include sidenav-list-component-theme($webron);
 
-
+//@include side.component-theme($webron);
 
 ////////////////////////////////////
 

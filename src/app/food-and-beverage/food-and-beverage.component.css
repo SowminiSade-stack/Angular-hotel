@@ -1,0 +1,15 @@
+.food-container{
+  background: url(/assets/images/fb1.jpg) center center no-repeat;
+  background-size:cover;
+  height: cal(100vh -145);
+}
+.mat-display-1{
+  text-align: center;
+  color:white;
+}
+
+.mat-display-3{
+  font-size:30px;
+  color:white;
+  text-align: center;
+}
