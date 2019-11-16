@@ -12,17 +12,23 @@ import { HomeComponent } from './home/home.component';
 import { RoomsComponent } from './accomodation/rooms/rooms.component';
 import { BarsComponent } from './food-and-beverage/bars/bars.component';
 import { ResturantComponent } from './food-and-beverage/resturant/resturant.component';
+import { ExcursionsComponent } from './lifestyle/excursions/excursions.component';
+import { ExperiencesComponent } from './lifestyle/experiences/experiences.component';
+import { ResortAndActivitiesComponent } from './lifestyle/resort-and-activities/resort-and-activities.component';
+import { WellnessAndSpaComponent } from './lifestyle/wellness-and-spa/wellness-and-spa.component';
 
 const routes: Routes = [
-  { path: 'accomodation', component: AccomodationComponent,
-  children: [{
-    path: 'rooms', component: RoomsComponent, outlet: 'room'
-  }]
-},
+  { path: 'accomodation', component: AccomodationComponent},
+  {  path: 'accomodation/rooms', component: RoomsComponent},
+
   { path: 'celebrations', component: CelebrationsComponent},
   { path: 'food-and-beverage', component: FoodAndBeverageComponent},
   { path: 'foodandbeverage', redirectTo: 'food-and-beverage', pathMatch: 'full'},
   { path: 'lifestyle' , component: LifestyleComponent},
+  { path: 'lifestyle/excursions' , component: ExcursionsComponent},
+  { path: 'lifestyle/experinces' , component: ExperiencesComponent},
+  { path: 'lifestyle/resortandactivities' , component: ResortAndActivitiesComponent },
+  { path: 'lifestyle/wellnessandspa' , component:  WellnessAndSpaComponent },
   { path: 'weddings', component: WeddingsComponent},
   { path: 'offers', component: OffersComponent},
   { path: 'signin', component: SigninComponent},
