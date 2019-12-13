@@ -11,5 +11,7 @@ export class RoomsComponent implements OnInit {
   @Input() accomdation: string ;
   ngOnInit() {
   }
-
+booknow() {
+  this.router.navigate(['/signup']);
+}
 }
